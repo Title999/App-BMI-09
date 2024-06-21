@@ -1,20 +1,36 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar color="primary">
     <ion-title>
-      Blank
+      App BMI
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content class="ion-padding ion-text-center" [fullscreen]="true">
+  <img src="../../assets/img/bmi.png" width="130">
+  <ion-card color="primary" class="ion-padding">
+    <ion-item>
+     <ion-input label="กรอกน้ำหนัก" placeholder="kg"></ion-input>
+    </ion-item>
+    <br>
+    <ion-item>
+      <ion-input label="กรอกส่วนสูง" placeholder="cm"></ion-input>
+    </ion-item>
+    <br>
+    <ion-button size="large" expand="block" shape="round" color="success">คำนวณ</ion-button>
+  </ion-card>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <ion-card color="secondary">
+   <ion-card-header>
+    <ion-card-subtitle>ผลลัพธ์</ion-card-subtitle>
+    <ion-card-title>18.5</ion-card-title>
+   </ion-card-header>
+  </ion-card>
+
+  <ion-card color="danger">
+    <ion-card-header>
+     <ion-card-subtitle>แปรผล</ion-card-subtitle>
+     <ion-card-title>อยู่ในเกณฑ์ปกติ</ion-card-title>
+    </ion-card-header>
+   </ion-card>
 </ion-content>
